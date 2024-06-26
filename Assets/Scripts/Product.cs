@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Product : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public float precio;
     void Start()
     {
         
