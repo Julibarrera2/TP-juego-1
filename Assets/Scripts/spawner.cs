@@ -19,7 +19,7 @@ public class spawner : MonoBehaviour
         Product producto1 = obj1.GetComponent<Product>();
         Product producto2 = obj2.GetComponent<Product>();
 
-        float sumaPrecios = producto1.precio + producto2.precio;
+        int sumaPrecios = producto1.precio + producto2.precio;
         Debug.Log("Suma de precios: " + sumaPrecios);
     }
     void Update()

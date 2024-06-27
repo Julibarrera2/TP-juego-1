@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Product : MonoBehaviour
 {
-    public float precio;
+    public int precio;
     void Start()
     {
         
