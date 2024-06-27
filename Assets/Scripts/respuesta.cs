@@ -5,12 +5,19 @@ using UnityEngine.UI;
 
 public class respuesta : MonoBehaviour
 {
-    public Button responder;
+    public spawner spawner;
+    private int rta_valor;
+    private int rta;
     public InputField input_rta;
+    public Button responder;
+    public Text txt_btn_rta;
+
+
     // Start is called before the first frame update
     void Start()
     {
-        int rta_valor = int.Parse(input_rta.text);
+        rta_valor = int.Parse(input_rta.text);
+        rta = spawner.sumaPrecios;
     }
 
     // Update is called once per frame
@@ -21,6 +28,9 @@ public class respuesta : MonoBehaviour
 
     void chek_rta()
     {
-        if()
+        if(rta_valor == rta)
+        {
+
+        }
     }
 }

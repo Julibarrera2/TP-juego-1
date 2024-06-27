@@ -7,6 +7,7 @@ public class spawner : MonoBehaviour
     public GameObject[] objetos;
     public Transform spawnpoint1;
     public Transform spawnpoint2;
+    public int sumaPrecios;
 
     void Start()
     {
@@ -19,7 +20,7 @@ public class spawner : MonoBehaviour
         Product producto1 = obj1.GetComponent<Product>();
         Product producto2 = obj2.GetComponent<Product>();
 
-        int sumaPrecios = producto1.precio + producto2.precio;
+        sumaPrecios = producto1.precio + producto2.precio;
         Debug.Log("Suma de precios: " + sumaPrecios);
     }
     void Update()
